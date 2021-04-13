@@ -8,6 +8,10 @@ import { InventoryComponent } from './dashboard/inventory/inventory.component';
 import { PurchaseComponent } from './dashboard/purchase/purchase.component';
 import { SalesMarketingComponent } from './dashboard/sales-marketing/sales-marketing.component';
 import { SupplychainManagementComponent } from './dashboard/supplychain-management/supplychain-management.component';
+import { HomeComponent } from './home/home.component';
+import { IndexComponent } from './index/index.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome' },
@@ -36,7 +40,12 @@ component:SalesMarketingComponent
 {path:'dashboard/supplychain-management',
 component:SupplychainManagementComponent
 },
+{path:'home',component:HomeComponent},
+{path:'register',component:RegisterComponent},
+{path:'login',component:LoginComponent},
+{path:'index',component:IndexComponent}
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

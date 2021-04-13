@@ -11,15 +11,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzLayoutComponent, NzLayoutModule} from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import {DashboardModule} from './dashboard/dashboard.module';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import {LoginComponent} from './login/login.component';
+import {IndexComponent} from './index/index.component';
 
 registerLocaleData(hi);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    IndexComponent
+  ],
+  exports:[AppComponent,
+    HomeComponent,
+    LoginComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
