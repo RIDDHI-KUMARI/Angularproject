@@ -1,67 +1,63 @@
 <nz-layout class="app-layout">
-<nz-sider class="menu-sidebar"
-            nzCollapsible
-            nzWidth="256px"
-            nzBreakpoint="md"
-            [(nzCollapsed)]="isCollapsed"
-            [nzTrigger]="null">
-    <div class="sidebar-logo">
-        <img src="./assets/images/logo.png" alt="logo">
-        <h1>Hard Cipher</h1>
-    </div>
-    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome">Welcome</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="dashboard/customerrelationshipmanagement">CRM</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/engineering-production">Engineering/Production</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/finance-accounting">Finance & Accounting</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/human-resource">Human Resource</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/inventory">Inventory</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/purchase">Purchase</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/sales-marketing">Sales & Marketing</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard/supplychain-management">SupplyChainManagement</a>
-          </li>
-      <ul nz-submenu nzOpen nzTitle="Logout" nzIcon="logout"></ul>
+    <nz-sider class="menu-sidebar"
+                nzCollapsible
+                nzWidth="256px"
+                nzBreakpoint="md"
+                [(nzCollapsed)]="isCollapsed"
+                [nzTrigger]="null">
+        <div class="sidebar-logo">
+            <img src="./assets/images/logo.png" alt="logo">
+            <h1>Hard Cipher</h1>
+        </div>
+        <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+          <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+            <ul>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/welcome">Welcome</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/customerrelationshipmanagement">CRM</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/engineering-production">Engineering/Production</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/finance-accounting">Finance & Accounting</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/human-resource">Human Resource</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/inventory">Inventory</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/purchase">Purchase</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/sales-marketing">Sales & Marketing</a>
+              </li>
+              <li nz-menu-item nzMatchRouter>
+                <a routerLink="/dashboard/supplychain-management">SupplyChainManagement</a>
+              </li>
+          <ul nz-submenu nzOpen nzTitle="Logout" nzIcon="logout"></ul>
+        </ul>
+      </li>
     </ul>
-  </li>
-</ul>
-  </nz-sider>
-  <nz-layout>
-    <nz-header>
-      <div class="app-header">
-        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-            <i class="trigger"
-               nz-icon
-               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-            ></i>
-        </span>
-      </div>
-    </nz-header>
-    <nz-content>
-      <div class="inner-content">
-      </div>
-    </nz-content>
-  </nz-layout>
-  
-
-
-
-  
+      </nz-sider>
+      <nz-layout>
+        <nz-header>
+          <div class="app-header">
+            <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+                <i class="trigger"
+                   nz-icon
+                   [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+                ></i>
+            </span>
+          </div>
+        </nz-header>
+        <nz-content>
+          <div class="inner-content">
+          </div>
+        </nz-content>
+      </nz-layout>
+        

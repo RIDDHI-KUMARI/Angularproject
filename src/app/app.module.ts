@@ -14,24 +14,28 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutComponent, NzLayoutModule} from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import {DashboardModule} from './dashboard/dashboard.module';
-import { HomeComponent } from './home/home.component';
+import { IndexComponent } from './index/index.component';
+import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import {LoginComponent} from './login/login.component';
-import {IndexComponent} from './index/index.component';
+import { HomeComponent } from './home/home.component';
+
+
 
 registerLocaleData(hi);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    IndexComponent,
     LoginComponent,
-    IndexComponent
+    RegisterComponent,
+    HomeComponent
   ],
   exports:[AppComponent,
-    HomeComponent,
+    IndexComponent,
     LoginComponent,
-    IndexComponent
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -13,9 +13,9 @@ import { IndexComponent } from './index/index.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
+
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/welcome' },
-  { path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule) },
+
   {path:'dashboard/customerrelationshipmanagement',
   component:CustomerrelationshipmanagementComponent
 },
@@ -40,10 +40,10 @@ component:SalesMarketingComponent
 {path:'dashboard/supplychain-management',
 component:SupplychainManagementComponent
 },
-{path:'home',component:HomeComponent},
 {path:'register',component:RegisterComponent},
 {path:'login',component:LoginComponent},
-{path:'index',component:IndexComponent}
+{path:'index',component:IndexComponent},
+{path:'', pathMatch:'full', component:HomeComponent}
 ];
 
 
