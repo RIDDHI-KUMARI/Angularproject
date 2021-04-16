@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
-import { NzLayoutComponent, NzLayoutModule} from 'ng-zorro-antd/layout';
+import { NzLayoutModule} from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import {DashboardModule} from './dashboard/dashboard.module';
 import { IndexComponent } from './index/index.component';
@@ -27,14 +27,14 @@ registerLocaleData(hi);
   declarations: [
     AppComponent,
     IndexComponent,
-    LoginComponent,
     RegisterComponent,
+    LoginComponent,
     HomeComponent
   ],
   exports:[AppComponent,
+    RegisterComponent,
     IndexComponent,
     LoginComponent,
-    RegisterComponent,
     HomeComponent
   ],
   imports: [
